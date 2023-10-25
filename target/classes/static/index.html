@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cadastro e Pesquisa de Jogos</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Subrayada:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <center><div class="title">
+	  <h1>Cadastro e Pesquisa de Jogos</h1></div></center>
+<center><div class="b1">
+  <div id="cadastro">
+       <center><h2 style="color: white; text-decoration:underline; font-size: 30px;">Cadastro de Jogo</h2></center>
+        <form id="cadastroForm">
+      <center><div class="b">
+		   <div class="nome"> 
+			   <label for="name">Nome</label>
+            <input type="text" id="name" name="name" required><br></div>
+  
+                    <p></p>
+
+            <label for="plataform">Plataforma:</label>
+            <input type="text" id="plataform" name="plataform" required><br></div></center>
+                   
+                    <p></p>
+
+	<button type="button" onclick="atualizarJogo()">🔁Atualizar</button> 
+	<button type="button" onclick="excluirJogo()">❌Excluir</button>
+
+          <center><button type="submit" id="pp">Cadastrar</button></center>
+        </form>
+    </div>
+    </div>
+
+<p></p>
+
+    <div class="b2">
+    <div id="pesquisa">
+       <center><h2 style="color: white; text-decoration:underline; font-size: 30px;">Pesquisa de Jogo</h2></center>
+        <form id="pesquisaForm">
+          <center><div class="a">
+			  <label for="searchId">ID do Jogo:</label>
+            <input type="text" id="searchId" name="searchId"><br></div></center>
+                   
+                    <p></p>
+
+           <center><button type="button" id="gg" onclick="pesquisarJogo()">Pesquisar</button></center>
+        </form>
+        <div id="resultadoPesquisa"></div>
+    </div>
+    </div>
+</center>
+    <script src="Script.js"></script>
+  
+</body>
+</html>
